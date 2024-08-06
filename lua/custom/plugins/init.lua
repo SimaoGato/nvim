@@ -10,4 +10,13 @@ return {
     -- use opts = {} for passing setup options
     -- this is equalent to setup({}) function
   },
+  {
+    'github/copilot.vim',
+  },
+  {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require('colorizer').setup()
+    end,
+  },
 }
